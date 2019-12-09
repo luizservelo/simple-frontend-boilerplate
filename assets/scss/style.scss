@@ -1,0 +1,121 @@
+// Imports
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap');
+
+// Variables 
+$color-primary: #6753ff;
+$color-dark: #191919;
+$color-light: #eeeeee;
+
+$font-primary: "Source Sans Pro", "sans-serif";
+
+$space-small: 15px;
+$space-medium: 30px;
+$space-large: 45px;
+
+$radius: 5px;
+
+$font-small: 14px;
+$font-medium: 18px;
+$font-large: 22px;
+$font-light: 300;
+$font-medium: 400;
+$font-bold: 600;
+$font-black: 700;
+
+// Reset 
+*{
+    font-family: $font-primary;
+    text-rendering: optimizelegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    &:focus{
+        outline: none;
+    }
+}
+
+img{
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+.container{
+    display: block;
+    width: 90%;
+    max-width: 630px;
+    display: block;
+    margin: auto;
+}
+
+// Page Styles 
+body{
+    background: $color-light;
+}
+
+header{
+    margin: $space-large 0;
+    .header-content{
+        padding: $space-medium;
+        background: $color-primary;
+        border-radius: $radius;
+        h1{
+            color: #ffffff;
+            text-align: center;
+            font-size: $font-large;
+        }
+    }
+}
+
+.block-quote{
+    background: #ffffff;
+    border-radius: $radius;
+    border-left: solid 5px $color-primary;
+    padding: $space-small;
+    margin-bottom: $space-medium;
+    .title{
+        margin-bottom: $space-small;
+        h2{
+            font-size: $font-large;
+            color: $color-primary;
+            font-weight: $font-black;
+        }
+    }
+    .content{
+        p{
+            margin-bottom: $space-small / 2;
+            color: $color-dark;
+            font-size: $font-small;
+            b{
+                color: $color-primary;
+            }
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+        ul{
+            padding: 0 $space-medium;
+            li{
+                list-style: circle;
+                color: $color-dark;
+                font-size: $font-small;
+            }
+        }
+        ol{
+            padding: 0 $space-medium;
+            li{
+                color: $color-dark;
+                font-size: $font-small;
+            }
+        }
+        pre{
+            background: $color-dark;
+            padding: $space-small/2 $space-small;
+            border-radius: $radius/2;
+            margin: $space-small/2 0 $space-small 0;
+            color: #ffffff;
+            font-size: $font-small;
+        }
+    }
+}
