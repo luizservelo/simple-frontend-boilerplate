@@ -11,6 +11,7 @@ Let's code!
 3. jQuery
 
 ## File Structure
+<pre>
 📦simple-frontend-boilerplate
     ┣ 📂assets
     ┃ ┣ 📂css
@@ -26,7 +27,7 @@ Let's code!
     ┣ 📜index.html
     ┣ 📜package.json
     ┗ 📜readme.md
-
+</pre>
 ## Using SASS
 1. Install Node.js
 2. Run this command from your terminal at project root. <pre>npm install</pre>
